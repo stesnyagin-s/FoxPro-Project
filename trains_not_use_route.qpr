@@ -1,0 +1,6 @@
+SELECT DISTINCT Schedule.id_train, E.passport;
+ FROM ;
+     schedule!train E ;
+    INNER JOIN schedule!schedule ;
+   ON  E.id_train = Schedule.id_train;
+ WHERE  Schedule.id_route <> 3

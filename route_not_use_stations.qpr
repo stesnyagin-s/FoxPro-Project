@@ -1,0 +1,7 @@
+SELECT Station.name;
+ FROM ;
+     station ;
+    LEFT OUTER JOIN schedule ;
+   ON  Station.id_st = Schedule.id_st;
+   AND  Schedule.id_route = ( 1 );
+ WHERE  Schedule.id_route IS NULL

@@ -1,0 +1,10 @@
+SELECT Station.id_st, Station.name, AVG(Schedule.stop) AS average;
+ FROM ;
+     station,;
+    schedule;
+ WHERE  Station.id_st = Schedule.id_st;
+ GROUP BY Station.id_st, Station.name;
+ INTO CURSOR tmp  
+SELECT tmp.id_st, tmp.name, average;
+	FROM tmp;
+	WHERE average > (SELECT AVG(schedule.stop) FROM schedule)
